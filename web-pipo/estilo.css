@@ -60,15 +60,13 @@
 
     #inicio .contenido header .contenido-header .redes a {
         text-decoration: none;
-        color: #fff;
+        color: lightblue;
         display: inline-block;
         margin-left: 10px;
         transition: .5s;
     }
    
-    #inicio .contenido header .contenido-header .redes a:hover {
-        color: lightblue;
-    }
+  
     #inicio .contenido header .contenido-header .seleccionado {
      color: lightblue;   
     }
