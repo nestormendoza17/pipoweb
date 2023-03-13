@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>PipoDevs Desarrollo Web</title>
+</head>
+
+<body>
+    <!--Sección Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <div>
+                        <h1>Pipo Devs</h1>
+                    </div>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#quiensoy" onclick="seleccionar(this)">QUIEN SOY?</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#certificaciones" onclick="seleccionar(this)">CERTIFICACIONES</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menú responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--Iconos de redes-->
+                    <div class="redes">
+                        <a href="https://www.instagram.com/pipodevs/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/n%C3%A9stor-carlos-mendoza-81018b59/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a
+                            href="https://wa.me/5493884042545?text=Hola!%20Puede%20decirme%20de%20tus%20servicios?"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos!</p>
+                <h2>Soy<span>Néstor Mendoza</span>,Desarrollador Web.</h2>
+                <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://github.com/nestormendoza17?tab=repositories">Ir a PORTFOLIO</a>
+            </div>
+        </div>
+    </section>
+    <!--seccion quien soy-->
+    <section id="quiensoy">
+        <div class="contenedor-foto">
+            <img src="./img/foto.jpg" alt="Néstor Mendoza">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">¿Quien Soy?</p>
+            <h2>Hola! Soy <span>Néstor Mendoza</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy de Jujuy, Argentina, donde empecé mi formación profesional con Antropología, luego fui descubriendo
+                este mundo del IT y me apasionó.
+                Por eso es que decidí estudiar en CODERHOUSE.</p>
+            <p>Aprendí a diseñar Páginas y Sitios, y sigo en ese proceso continuo de formación. Mezclando así lo que
+                aprendí de la antropología y el día a día con el servicio al público en mis trabajos anteriores. Esto me
+                lleva a pensar de una forma más integral, junto al cliente, lo que necesita un sitio.</p>
+            <a href="https://docs.google.com/document/d/1tp9xQZKQ_1BBZm8M3iVtqBNTu0hl3mri4lG6CYzWh-8/edit?usp=sharing">Descargar
+                CV</a>
+        </div>
+    </section>
+
+    <!--servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt,
+                    asperiores!</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Posicionamiento SEO</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Certificaciones-->
+    <section id="certificaciones">
+        <h3 class="titulo-seccion">MIS CERTIFICACIONES</h3>
+        <div class="fila">
+            <div class="certificacion">
+                <div class="overlay"><img src="./img/desarrollo.png" alt="Desarrollo Web"></div>
+                <div class="info">
+                    <h4>Desarrollo Web</h4>
+                </div>
+            </div>
+            <div class="certificacion">
+                <div class="overlay"><img src="./img/javascript.png" alt="JavaScript"></div>
+                <div class="info">
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+            <div class="certificacion">
+                <div class="overlay"><img src="./img/react.png" alt="React JS"></div>
+                <div class="info">
+                    <h4>React JS</h4>
+                </div>
+            </div>
+            <div class="certificacion">
+                <div class="overlay"><img src="./img/front.png" alt="Desarrollo FrontEnd"></div>
+                <div class="info">
+                    <h4>Desarrollo FrontEnd React JS</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de E-Mail" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <p>Todos los derechos Reservados 2023</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/pipodevs/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/n%C3%A9stor-carlos-mendoza-81018b59/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/5493884042545?text=Hola!%20Puede%20decirme%20de%20tus%20servicios?"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
